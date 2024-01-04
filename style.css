@@ -1,0 +1,90 @@
+/* SIMPLE SELECTORS*/
+p {
+  color: rgb(20, 7, 133); /* color property*/
+}
+/* id */
+#para {
+  color: crimson;
+}
+/* class */
+.new {
+  color: yellow;
+}
+/* universal selector: applied to all the elements */
+* {
+  font-family: monospace; /* font property*/
+}
+
+/* grouping selector */
+h3,
+h6,
+h4 {
+  color: green;
+}
+
+/* COMBINATOR SELECTORS */
+
+/* descendant selector */
+div span {
+  color: darkblue;
+}
+/* child selector */
+div > span {
+  color: green;
+}
+/* adjacent sibling  */
+h1 + h2 {
+  color: yellow;
+}
+/* general sibling */
+h1 ~ h2 {
+  text-decoration: underline; /* property to underline the text*/
+}
+
+/* PSEUDO CLASS SELECTOR */
+
+/* unvisited link*/
+a:link {
+  color: green;
+}
+/* visited link */
+a:visited {
+  color: red;
+}
+/* on mouse hover */
+a:hover {
+  color: black;
+  font-size: xx-large; /* font-size property*/
+}
+p:nth-of-type(3) {
+  text-decoration: underline;
+}
+
+/* PSEUDO ELEMENT SELECTOR*/
+p::first-line {
+  font-weight: bolder; /* property to set the font weight*/
+  background-color: yellow;
+}
+h3::before {
+  content: "this is before h3";
+}
+h4::after {
+  content: "this is after h4";
+}
+
+/* ATTRIBUTE SELECTOR */
+p[id] {
+  background-color: blue;
+}
+img[src] {
+  border: 5px dashed black; /* border property- 5px: width | dashed: border-style | black: border-color*/
+  width: 500px; /* property to set the width*/
+  height: 200px; /* property to set the height*/
+}
+img {
+  margin: 45px; /* property to set the margin: after the border*/
+}
+h1 {
+  border: 2px lightgray solid;
+  padding: 30px; /* property to set the padding: before the border*/
+}
